@@ -14,11 +14,13 @@ body{font-size:12px; font-family:"微软雅黑";color:#333; }
 /* public */
 .clearfix {*zoom: 1;}
 .clearfix:before,.clearfix:after {content:'';display: block;height: 0;clear: both;visibility: hidden;}
-/* 清除浮动 */
+/* 外边距溢出 */
 .img_box{display:table-cell;vertical-align:middle;text-align:center;}
 /* 居中 */
 .main{width:100%; max-width:1200px; margin:0 auto;}
+/* 宽度最大 */
 .fixed{position:fixed;left:0;top:0;z-index:999;}
+
 .btn{font-family: '微软雅黑';cursor:pointer;}
 /* .bl{display:inline-block;float:left;} */
 /* .br{display:inline-block;float:right;} */

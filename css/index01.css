@@ -1,8 +1,13 @@
-
+.header .nav ul li{
+	width: auto;
+}
 .flex{
 	display: inline;
 	font-size: 0.5rem;
 	vertical-align : top;
+}
+.hot_key ul li a:hover {
+    text-decoration: none;
 }
 ul > li {
 	display: inline;
@@ -24,20 +29,37 @@ ul > li:active{
 }
 
 .hot_key .search_box input.submit{
-    width:60px;
-    height:42px;
-    border:none;
-    background:#fff url(../images/search.png) no-repeat center;
-    cursor:pointer;
-    position:absolute;
-    top:0;right:0;
+	width: 38px;
+	height:38px;
+	border:none;
+	text-align: center;
+	background:#fff url(../images/search.png) no-repeat center;
+	border-radius: 50%;
+	cursor:pointer;
+	position: absolute;
+	top:6px;
+	right:2px;
+}
+
+
+.hot_key .search_box input.text{
+	height: 50px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	border-radius: 25px;
+	background-color: #fff;
+	/* position: absolute; */
+	/* right: 50px; */
+	/* top: 50px; */
+	width: 100%;
+	/* z-index: 999; */
 }
 
 .clearfix .nav.hot_key{
 	display: inline;
 }
 .hot_key .search_box{
-	width: 100px;
+	width: 250px;
 }
 
 .hot_key{
@@ -48,10 +70,12 @@ ul > li:active{
 
 
 /* 简介style */
+body > .bg_c{
+	color: #006699;
+}
 .bg_c{
-	background-color: rgb(42,52,61);
 	position: relative;
-	height: 587px;
+	/* height: 587px; */
 }
 .bg_i{
 	/* 2a343d */
@@ -70,6 +94,7 @@ ul > li:active{
 	left: 0;
 	right: 0;
 }
+
 .bg_c>.referral>div:last-child>div{
 	background-color: #fff;
 	border: none;
@@ -90,6 +115,10 @@ ul > li:active{
 	background-color: #fff;
 	color: red; */
 }
+.bg_c > .div{
+	position: relative;
+	top: 190px;
+}
 
 
 .referral>div:nth-child(1){
@@ -108,7 +137,7 @@ ul > li:active{
 }
 
 .btn_group{
-	margin: 50px 0 100px;
+	margin: 200px 0 100px;
 	text-align: center;
 	text-decoration: center;
 }
@@ -135,7 +164,7 @@ ul > li:active{
 
 
 /* 内容前三行的重复样式 */
-.referral>div:nth-child(1),
+.bg_c >  .referral>div:nth-child(1),
 .repro > .item >div:nth-child(1),
 .trait > .tra_title> div:nth-child(1),
 .trait_c .tra_text .tra_title> div:nth-child(1){
@@ -143,16 +172,17 @@ ul > li:active{
 	font-size: 24px;
 }
 
-.referral>div:nth-child(2),
+.bg_c >  .referral>div:nth-child(2),
 .repro > .item >div:nth-child(2),
 .trait > .tra_title> div:nth-child(2),
 .trait_c .tra_text .tra_title> div:nth-child(2){
+	text-transform: uppercase
 	padding-top: 15px;
 	font-size: 15px;
 	color: #E8390E;
 }
 
-.referral>div:nth-child(3),
+.bg_c >  .referral>div:nth-child(3),
 .repro > .item >div:nth-child(3),
 .trait > .tra_title> div:nth-child(3),
 .trait_c .tra_text .tra_title> div:nth-child(3){
@@ -163,11 +193,16 @@ ul > li:active{
 
 
 /* 产品特点 */
+
 .trait_c{
 	background-color: #313131;
 	height: 815px;
 	position: relative;
 }
+.trait_c > .tra_text > .tra_title{
+	color: #fff;
+}
+
 .trait_c > .trait_i{
 	height: 815px;
 	width: 100%;
@@ -195,4 +230,18 @@ ul > li:active{
 		margin: 0px 0 0 -600px;
 }
 
+.tu1{
+	background: url(../images/防盗刷.png) no-repeat;
+	background-size: 100% 100%;
+	width: 20px;
+	height: 20px;
+}
 
+.main > img{
+	width: 20px;
+	height: 20px;
+}
+
+.pro_type ul li:nth-child(1){
+	background: rgba(0,0,0,0);
+}
