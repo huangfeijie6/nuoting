@@ -70,9 +70,6 @@ ul > li:active{
 
 
 /* 简介style */
-body > .bg_c{
-	color: #006699;
-}
 .bg_c{
 	position: relative;
 	/* height: 587px; */
@@ -121,7 +118,10 @@ body > .bg_c{
 }
 
 
-.referral>div:nth-child(1){
+.bg_c:nth-child(even) > .referral>div:nth-child(1){
+	color: #2a343d;
+}
+.bg_c:nth-child(odd) > .referral>div:nth-child(1){
 	color: #fff;
 }
 
@@ -164,28 +164,19 @@ body > .bg_c{
 
 
 /* 内容前三行的重复样式 */
-.bg_c >  .referral>div:nth-child(1),
-.repro > .item >div:nth-child(1),
-.trait > .tra_title> div:nth-child(1),
-.trait_c .tra_text .tra_title> div:nth-child(1){
+.bg_c >  .referral>div:nth-child(1){
 	padding-top: 50px;
 	font-size: 24px;
 }
 
-.bg_c >  .referral>div:nth-child(2),
-.repro > .item >div:nth-child(2),
-.trait > .tra_title> div:nth-child(2),
-.trait_c .tra_text .tra_title> div:nth-child(2){
+.bg_c >  .referral>div:nth-child(2){
 	text-transform: uppercase
 	padding-top: 15px;
 	font-size: 15px;
 	color: #E8390E;
 }
 
-.bg_c >  .referral>div:nth-child(3),
-.repro > .item >div:nth-child(3),
-.trait > .tra_title> div:nth-child(3),
-.trait_c .tra_text .tra_title> div:nth-child(3){
+.bg_c >  .referral>div:nth-child(3){
 	color: #B5B5B5;
 	font-size: 13px;
 	margin: 20px 25px 52px 25px;
@@ -194,16 +185,8 @@ body > .bg_c{
 
 /* 产品特点 */
 
-.trait_c{
-	background-color: #313131;
-	height: 815px;
-	position: relative;
-}
-.trait_c > .tra_text > .tra_title{
-	color: #fff;
-}
 
-.trait_c > .trait_i{
+.bg_c > .trait_i{
 	height: 815px;
 	width: 100%;
 	background-repeat: no-repect;
@@ -212,15 +195,9 @@ body > .bg_c{
 	background-position: -200px 0;
 	background-image:  url(../images/black-and-white-buildings-city-2255.jpg);
 }
-.trait_c .tra_text{
-	position: absolute;
-	text-align: center;
-	height: 815px;
-	/* text-decoration: center; */
-	width: 100%;
-	top: 0;
-}
-.trait_c .tra_text .tra_ctext{
+
+
+.bg_c .tra_ctext{
 		box-shadow: 1.286px 1.532px 40px 0px rgb( 0, 0, 0 );
 		position: absolute;
 		top: 190px;	
@@ -229,6 +206,9 @@ body > .bg_c{
 		left: 50%;
 		margin: 0px 0 0 -600px;
 }
+
+
+
 
 .tu1{
 	background: url(../images/防盗刷.png) no-repeat;
@@ -244,4 +224,24 @@ body > .bg_c{
 
 .pro_type ul li:nth-child(1){
 	background: rgba(0,0,0,0);
+}
+
+
+
+/* 工程案例 */
+.bg_c:nth-of-type(6){
+	color: #009900;
+}
+.case{
+	background-image: url(../images/case01.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 200%;
+	background-position: center;
+	height: 620px;
+	
+}
+
+
+.pro_type {
+    background-color: #383f45;
 }
