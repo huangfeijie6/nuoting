@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			 *{
+			            margin: 0;
+			            padding: 0;
+			            transition: all .5s linear 0s;
+			        }
+			        li{list-style: none}
+			        ul{
+			            margin: 50px auto;
+			            width: 800px;
+			            height: 250px;
+			            display: flex;
+			        }
+			        ul>li{
+			            display: flex;
+			            cursor:pointer;
+			        }
+			        ul>li>p{
+			            height: 100%;
+			            width: 100px;
+			            line-height: 250px;
+			            font-size: 100px;
+			            text-align: center;
+			            border-right: 1px solid #aaa;
+			            background-color: #5f96d5;
+			        }
+			        ul>li>img{
+			            width: 0;
+			            height: 100%;
+			        }
+			        ul>li.active img{
+			            width: 300px;
+			        }
+		</style>
+	</head>
+	<body>
+		<ul>
+		    <li class="active"><p>1</p><img src="img/10.jpg"></li>
+		    <li><p>2</p><img src="img/4.jpg"></li>
+		    <li><p>3</p><img src="img/6.jpg"></li>
+		    <li><p>4</p><img src="img/7.jpg"></li>
+		    <li><p>5</p><img src="img/9.jpg"></li>
+		</ul>
+		<script>
+			 //获取所有li
+			    let lis=document.querySelectorAll('ul>li');
+			    //循环绑定单击事件
+			    [].forEach.call(lis,item=>{item.onclick=function () {
+			            //单击时先全部清除active类
+			            [].forEach.call(lis,item=>{item.classList.remove('active')});
+			            //为单击元素添加active类
+			            this.classList.add('active');
+			        }
+			    })
+		</script>
+	</body>
+</html>
