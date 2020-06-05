@@ -9,13 +9,6 @@
 .hot_key ul li a:hover {
     text-decoration: none;
 }
-ul > li {
-	display: inline;
-}
-ul > li:active{
-	padding-bottom: 0.5rem;
-	color: red;
-}
 .ini{
 	display: inline-block;
 }

@@ -1,4 +1,49 @@
+
+.flex{
+	display: inline;
+	font-size: 0.5rem;
+	vertical-align : top;
+}
+.header ul > li {
+	display: inline;
+	padding-bottom: 0.5rem;
+}
+.header ul > li:active{
+	color: red;
+}
+.ini{
+	display: inline;
+}
+
+
+
+.bg_c .banner .banner_prev{
+	left: 550px;
+}
+.bg_c .banner .banner_next{
+	right: 520px;
+	
+}
+.bg_c .banner .banner_prev,
+.bg_c .banner .banner_next{
+	top: 70%;
+	opacity: .4;
+	color: #000;
+	background: #f0f0f0;
+	border: 1px solid #000000;
+}
+
+
+
+
+
+
+
 /* header*/
+.maxw{
+	max-width: 1920px;
+	margin: 0 auto;
+}
 .header{
 	height: auto;
 }
@@ -51,13 +96,17 @@
 }
 
 .header .main .clearfix .search_box2{
-	display: block;
+	display: none;
 	border: 0px solid #000000;
 	float: right;
 	margin-top: 40px;
 	margin-right: -25px;
 }
-
+.text{
+	position: absolute;
+	top: 80%;
+	left: 700px;
+}
 
 
 
@@ -280,6 +329,10 @@ body > .bg_c > .referral > #fin{
 .case .prot .main .pro_type.t1 ul li {
 	color: #fff;
 }
+.case .prot .main .pro_type ul li.on a,
+.case .prot .main .pro_type ul li a:hover{
+	color: #fb2525;
+}
 
 .case .content2 .text{
 	color: #FFFFFF;
@@ -299,10 +352,10 @@ body > .bg_c > .referral > #fin{
 	margin: 0 auto;
 	padding: 0px 0 50px;
 }
-.page .bl{
+.page1 .bl{
 	width: 40%;
 }
-.page .bl .pg_pic{
+.page1 .bl .pg_pic{
 	width: 100%;
 	height: 300px;
 	background-image: url(../images/new01.png);
@@ -311,27 +364,27 @@ body > .bg_c > .referral > #fin{
 	display: inline-block;
 }
 
-.page .br{
+.page1 .br{
 	position: relative;
 	width: 55%;
 	
 }
-.page .br .border{
+.page1 .br .border{
 	position: absolute;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 30px 20px;
 }
 
-.page .br h3{
+.page1 .br h3{
 	font-size: 19px;
 }
 
-.page .br .time{
+.page1 .br .time{
 	padding: 20px 0;
 	color: red;
 }
-.page .br p{
+.page1 .br p{
 	color: #666666;
 	font-size: 15px;
 }

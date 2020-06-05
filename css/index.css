@@ -1584,21 +1584,3 @@ h1,h2,h3,h4,h5{font-weight:normal;}
     width:100%;
     height:100%;
 }
-
-.flex{
-	display: inline;
-	font-size: 0.5rem;
-	vertical-align : top;
-}
-ul > li {
-	display: inline;
-}
-ul > li:active{
-	padding-bottom: 0.5rem;
-	color: red;
-}
-.ini{
-	display: inline;
-}
-
-

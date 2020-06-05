@@ -41,17 +41,19 @@
 		</div>
 		
 		<!-- banner -->
-		<div class="banner">
-		    <div class="bd">
-		        <ul>
-		            <li><a href="javascript:;"><img src="images/轮播图1.png" alt=""></a></li>
-		            <li><a href="javascript:;"><img src="images/轮播图1.png" alt=""></a></li>
-		            <li><a href="javascript:;"><img src="images/轮播图1.png" alt=""></a></li>
-		        </ul>
-		    </div>
-		    <div class="hd"><ul></ul></div>
-			<span class="banner_prev">&lt;</span>
-		    <span class="banner_next">&gt;</span>
+		<div class="maxw">
+			<div class="banner">
+				 <div class="bd">
+					  <ul>
+							<li><a href="javascript:;"><img src="images/轮播图1.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="images/轮播图1.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="images/轮播图1.png" alt=""></a></li>
+					  </ul>
+				 </div>
+				 <div class="hd"><ul></ul></div>
+				<span class="banner_prev">&lt;</span>
+				 <span class="banner_next">&gt;</span>
+			</div>
 		</div>
 		
 		<!-- 诺庭简介 -->
@@ -208,36 +210,42 @@
 				<div>-为你缔造家庭空间之美-</div>
 			</div>
 			<div class="main">
-				<div class="page">
-					<div class="bl">
-						<div class="pg_pic"></div>
-					</div>
-					<div class="br">
-						<div class="border">
-							<h3>铝合金门选购注意五点 铝合金门窗怎么保养？</h3>
-							<div class="time">2019-05-25</div>
-							<p>使用材料铝窗的木材通常包含三个主要方面:铝合金、玻璃、五金、业主购买产品时,他们通常</p>
-							<p>更注意铝和玻璃的厚度,而硬件要求不是很高,是不全面的。事实上,国家规定的要求的铝合金</p>
-							<p>门窗-定有一个标准。优质的铝合金门窗使用，其厚度、强度和氧化膜的基本符合国家标准...</p>
-						</div>
-					</div>
-				</div>
-				<div class="toggle">
-					<div class="btn">
-						<img src="images/lticon_23.png" >
-						<img src="images/lticon_25.png" >
-					</div>
-						1/5
+				<div class="banner">
+					 <div class="bd">
+						  <ul class="comattr">
+								<li><a data-toggle="tab" href="javascript:;"><img src="images/news01.png" alt=""></a></li>
+								<li><a data-toggle="tab" href="javascript:;"><img src="images/news01.png" alt=""></a></li>
+								<li><a data-toggle="tab" href="javascript:;"><img src="images/news01.png" alt=""></a></li>
+							<!-- 	<li class="page1">
+									<a href="javascript:;">
+										<div class="bl">
+											<div class="pg_pic"></div>
+										</div>
+										<div class="br clearfix">
+											<div class="border">
+												<h3>铝合金门选购注意五点 铝合金门窗怎么保养？</h3>
+												<div class="time">2019-05-25</div>
+												<p>使用材料铝窗的木材通常包含三个主要方面:铝合金、玻璃、五金、业主购买产品时,他们通常</p>
+												<p>更注意铝和玻璃的厚度,而硬件要求不是很高,是不全面的。事实上,国家规定的要求的铝合金</p>
+												<p>门窗-定有一个标准。优质的铝合金门窗使用，其厚度、强度和氧化膜的基本符合国家标准...</p>
+											</div>
+										</div>
+									</a>
+								</li> -->
+						  </ul>
+					 </div>
+					<span class="banner_prev">&lt;</span>
+					 <span class="banner_next">&gt;</span>
+					 <div class="text">1/3</div>
 				</div>
 			</div>
 		</div>
-		
 		
 		<div class="footer">
 			<div class="main">
 				 <div class="footer_box clearfix">
 					 <div class="footer_text">
-						 <img src="images/icon.jpg" >
+						 <h1><a href="javascript:;"><img src="images/icon.jpg" ></a></h1>
 					 </div>
 					 <div class="nav">
 						 <div>地址：广东省佛山市南海区狮山镇横岗工业区</div>
@@ -249,7 +257,7 @@
 							<div class="qr"><img src="images/qr01.png" alt=""></div>
 					  </div>
 				</div>
-				 <div class="copy"><p>©版权所有：佛山诺庭门窗有限公司 技术支持：网盛科技</p></div>
+				 <div class="copy"><p>©版权所有：佛山诺庭门窗有限公司 技术支持：<a href="javascript:;">网盛科技</a></p></div>
 			</div>
 		</div>
 		
@@ -261,11 +269,66 @@
 			$('.search_box').click(function(){
 				$('.search_box2').toggle();
 			});
-			$('img[src][images/lticon_23.png]').click(()=>{
-				console.log();
-			})
-		
-		
+			
+			
+			
+			let $fat=$('.main');
+			let $ul=$fat.find(".comattr");
+			let $text=$fat.find('.text');
+			let total=$ul.children('li').length;
+			$ul.click(function(e){console.log(
+			
+			e.target);})
+			
+			
+			
+			
+			
+			
+			// ready代表DOM加载完调用相当于$(function(){})
+			// $(document).ready(function(){
+			// 	console.log($(window).width());
+			// 	//浏览器当前窗口可视区域高度
+			// })
+			// 方法二：缺点
+			
+			// let $fat=$('.main');
+			// let $ul=$fat.find(".comattr");
+			// let $text=$fat.find('.text');
+			// let total=$ul.children('li').length;
+			// let page=0;
+			// $(function(){
+			// 	$text.html(1+'/'+total);
+			// })
+			// console.log(page);
+			// page=Math.floor(Math.abs(parseInt($ul.css('left'))/1200));
+			// page==0?page=3:page=page;
+			// setInterval(function(){
+			// 	page=Math.floor(Math.abs(parseInt($ul.css('left'))/1200));
+			// 	page==0?page=3:page=page;
+			// 	$text.html(page+'/'+total);
+			// },400)
+			
+			
+			// $(".comattr").on("DOMAttrModified",function(e){
+			//     // $("#prov_val").html("");
+			// 	 console.log(222);
+			// })
+			// 方法一:缺点是容易和创建了多个JQ原型对象卡死
+			// let $ul=$('.comattr');
+			// let num=$ul.children('li').length;
+			// let page=1;
+			// $('.total').html(page+'/'+num);
+			// setInterval(()=>{
+			// 	page=Math.floor(Math.abs(parseInt($ul.css('left'))/1200));
+			// 	page==0?page=3:page=page;
+			// 	$('.text').html(page+'/'+num)
+			// },500)
+			
+			
+			// let sum=li.length;
+			
+			
 			
 			var mySwiper = new Swiper('.swiper-container',{
 				slidesPerView : 4,
