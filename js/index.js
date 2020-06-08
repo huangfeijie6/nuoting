@@ -10,7 +10,7 @@ $('.fixRbox .gotop').on('click', function(){
 
 
 
-$(".banner").slide({titCell:'.hd ul', mainCell:'.bd ul', autoPlay:true, autoPage:true, trigger:'click', effect:'leftLoop',prevCell:".banner_prev",nextCell:".banner_next", delayTime:1000, interTime: 5000});
+$(".banner").slide({titCell:'.hd ul',mainCell:'.bd ul',autoPlay:true,autoPage:true,trigger:'click',effect:'leftLoop',prevCell:".banner_prev",nextCell:".banner_next",delayTime:1000,interTime: 5000,});
 $('.ipro_slide .sslide').slide({titCell:'.hd ul', mainCell:'.bd ul', autoPage:true, effect:'left', trigger:'click', vis:3});
 $('.ipro_slide').slide({titCell:'.parhd ul li', mainCell:'.parbd', trigger:'click'});
 $('.prov_slide').slide({titCell:'.hd ul li', mainCell:'.bd ul', effect:'left', trigger:'click', prevCell:".sprev", nextCell:".snext"});

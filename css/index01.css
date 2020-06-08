@@ -166,7 +166,7 @@ body > .bg_c > .referral > #fin{
 }
 
 .bg_c >  .referral>div:nth-child(2){
-	text-transform: uppercase
+	text-transform: uppercase;
 	padding-top: 15px;
 	font-size: 15px;
 	color: #E8390E;

@@ -4,9 +4,12 @@
 	font-size: 0.5rem;
 	vertical-align : top;
 }
+.header .nav ul li{
+	width: 95px;
+}
 .header ul > li {
 	display: inline;
-	padding-bottom: 0.5rem;
+	padding-bottom: 10px;
 }
 .header ul > li:active{
 	color: red;
@@ -16,6 +19,9 @@
 }
 
 
+body{
+	overflow-x:hidden;
+}
 
 .bg_c .banner .banner_prev{
 	left: 550px;
@@ -32,9 +38,6 @@
 	background: #f0f0f0;
 	border: 1px solid #000000;
 }
-
-
-
 
 
 
@@ -57,6 +60,9 @@
 .banner .hd ul li{
 	background-color: #2a343d;
 }
+.hot_key ul li a{
+	margin-top: -5px;
+}
 .header .main{
 	margin: 0 auto;
 }
@@ -66,11 +72,11 @@
 	background-image: url(../images/icon.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	margin-top: 30px;
+	margin-top: 15px;
 	display: inline-block;
 }
 .header .main .clearfix .hot_key{
-	width: 80%;
+	width: 833px;
 	display: inline-block;
 	border-bottom: 0px;
 }
@@ -84,7 +90,7 @@
 	display: inline-block;
 	height: 20px;
 	width: 20px;
-	margin: 15px 0 1px;
+	margin-top: 10px;
 	float: right;
 	background-image: url(../images/search.png);
 	background-repeat: no-repeat;
@@ -92,22 +98,18 @@
 }
 
 .header .main .clearfix .search_box:active{
-	margin: 16px 0 0px;
+	margin: 11px 0 0px;
 }
 
 .header .main .clearfix .search_box2{
 	display: none;
-	border: 0px solid #000000;
-	float: right;
-	margin-top: 40px;
+	border: 1px solid #000000;
+	margin-top: 63px;
 	margin-right: -25px;
+	position: relative;
+	z-index: 5;
+	background-color: #fff;
 }
-.text{
-	position: absolute;
-	top: 80%;
-	left: 700px;
-}
-
 
 
 /* 简介style */
@@ -134,27 +136,25 @@
 	right: 0;
 }
 
-.bg_c>.referral>div:last-child>div{
+.bg_c>.referral>div:last-child div{
 	background-color: #fff;
 	border: none;
 	color: white;
-	padding: 10px 30px;
-	margin-top: 30px;
+	width: 120px;
+	margin-top: 77.5px;
+	line-height: 34px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
 	color: #000000;
-	border-left: 5px solid red;
-	/* position: absolute;
-	left: 0;
-	right: 0;
-	width: 100px;
-	height: 50px;
-	background-color: #fff;
-	color: red; */
+	border-left: 4px solid #e8390e;
+	cursor: pointer;
 }
 
+.bg_c>.referral>div:last-child div:active{
+	margin-top: 79px;
+}
 
 .bg_c:nth-child(odd) > .referral>div:nth-child(1){
 	color: #fff;
@@ -193,34 +193,41 @@ body > .bg_c > .referral > #fin{
 }
 .bg_c>.referral>div:nth-child(3)~div{
 	font-size: 15px;
-	padding-bottom: 23px;
+	line-height: 36px;
 	color: #fff;
 }
 
 .repro > .item,
-.bg_c>.referral{
+.bg_c > .referral{
 	text-align: center;
 	text-decoration: center;
 }
 
 
 /* 内容前三行的重复样式 */
-.bg_c >  .referral>div:nth-child(1){
+.bg_c > .referral>div:nth-child(1){
 	padding-top: 50px;
-	font-size: 24px;
+	font-size: 25px;
+	line-height: 25px;
 }
 
 .bg_c >  .referral>div:nth-child(2){
-	text-transform: uppercase
+	text-transform: uppercase;
 	padding-top: 15px;
-	font-size: 15px;
+	font-size: 20px;
+	line-height: 20px;
 	color: #E8390E;
 }
 
 .bg_c >  .referral>div:nth-child(3){
 	color: #B5B5B5;
-	font-size: 13px;
-	margin: 20px 25px 52px 25px;
+	font-size: 15px;
+	line-height: 15px;
+	margin: 20px 25px 41.5px 25px;
+}
+
+.bg_c >  .referral>div:nth-child(4){
+	/* padding-top: 7.5px; */
 }
 
 
@@ -241,7 +248,7 @@ body > .bg_c > .referral > #fin{
 	position: absolute;
 	top: 190px;	
 	width: 1200px;
-	height: 561px;
+	height: 560px;
 	left: 50%;
 	margin: 0px 0 0 -600px;
 }
@@ -249,13 +256,13 @@ body > .bg_c > .referral > #fin{
 	box-sizing: border-box;
 	width: 50%;
 	float: left;
-	padding: 55px 0 0 30px;
+	padding: 50px 0 0 22px;
 }
 .tra_ctext .tedian .tu{
 	float: left;
 	width: 20px;
 	height: 20px;
-	margin: 4px 8px 0 0;
+	margin: 4px 14px 0 0;
 }
 .tra_ctext .tedian .tu1{
 	background: url(../images/lticon_03.png) center/100% 100% no-repeat;
@@ -286,11 +293,15 @@ body > .bg_c > .referral > #fin{
 }
 .tra_ctext .tedian .font div:nth-of-type(1){
 	color: #e8390e;
+	font-weight: 700;
 	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 8.5px;
 }
 .tra_ctext .tedian .font div:nth-of-type(2){
 	color: #ffffff;
 	font-size: 15px;
+	line-height: 26px;
 	max-width: 465px;
 }
 
@@ -313,11 +324,19 @@ body > .bg_c > .referral > #fin{
 	height: 620px;
 }
 
-.case .content2{
+.case .cantain{
 	margin: 20px 0 0 20px;
 	
 }
-.case .content2 .title{
+.case .cantain .content{
+	display: none;
+}
+
+.case .cantain .content.active1{
+	display: block;
+}
+
+.case .cantain .title{
 	font-weight: 800;
 	text-shadow: #000000 0px 1px 7px;
 	color: #FFFFFF;
@@ -334,12 +353,12 @@ body > .bg_c > .referral > #fin{
 	color: #fb2525;
 }
 
-.case .content2 .text{
+.case .cantain .text{
 	color: #FFFFFF;
 	font-size: 40px;
 	margin: 15px 0 25px;
 }
-.case .content2 div:last-of-type{
+.case .cantain .content div:last-of-type{
 	color: #FFFFFF;
 	text-decoration: underline;
 	font-style: italic;
@@ -400,28 +419,87 @@ body > .bg_c > .referral > #fin{
 	display: inline;
 }
 
+.news > .main{
+	overflow: hidden;
+}
+
+
+
 
 /* footer */
 .footer{
 	background-color: #FFFFFF;
 	color: #000000;
 }
-
+.footer_box{
+	padding-top: 30px;
+}
+.footer_box .footer_text{
+	max-width: 397px;
+}
 .footer .main .footer_box .footer_text{
-	margin-top: 40px;
+	margin-top: 20px;
+	width: 400px;
 }
 .footer .main .footer_box .wxqr{
-	width: 15%;
+	width: auto;
 }
 .footer .main .footer_box .nav{
 	display: inline-block;
-	width: 60%;
+	width: 700px;
 	color: #666666;
 }
 .footer .main .footer_box .nav > div{
 	display: block;
 	box-sizing: border-box;
+	font-size: 15px;
+	line-height: 45px;
 	width: 50%;
 	float: left;
-	padding: 35px 0 0 30px;
+}
+.footer_box .wxqr .qr{
+	width: 103px;
+	height: 103px;
+}
+
+
+
+
+
+
+
+
+
+.swiper-container2 .swiper-slide.swiper-slide-prev,
+.swiper-container2 .swiper-slide.swiper-slide-next{
+	/* visibility: hidden !important; */
+}
+
+.swiper-container2 .swiper-button-next,.swiper-container2  .swiper-button-prev{
+	top: 80%;
+}
+.swiper-container2 .swiper-button-prev{
+	background-image: url(../images/lticon_23.png);
+	height: 47px;
+	width: 47px;
+	background-size: 100% 100%;
+	left: 48%;
+}
+.swiper-container2 .swiper-button-next{
+	background-image: url(../images/lticon_25.png);
+	height: 47px;
+	width: 47px;
+	background-size: 100% 100%;
+	left: 52%;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	width: auto;
+	bottom: 90px;
+	left: 55%;
+}
+
+
+.swiper-container2 > div > div:not(.swiper-slide-active){
+	/* display: none; */
 }
